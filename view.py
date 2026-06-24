@@ -31,7 +31,7 @@ class AppView:
 
         self.labelTitulo = tk.Label(
             self.miFrame,
-            text="Ingresa la URL",
+            text="Enter the URL",
             font=("Times New Roman", 15)
         )
         self.labelTitulo.place(x=180, y=50)
@@ -41,14 +41,14 @@ class AppView:
 
         self.btnLimpiar = tk.Button(
             self.miFrame,
-            text="Limpiar",
+            text="Clear",
             command=self.limpiar_estado
         )
         self.btnLimpiar.place(x=150, y=150)
 
         self.btnDescarga = tk.Button(
             self.miFrame,
-            text="Descargar",
+            text="Download",
             command=self.click_descargar
         )
         self.btnDescarga.place(x=300, y=150)

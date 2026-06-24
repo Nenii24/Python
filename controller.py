@@ -9,15 +9,15 @@ class Controller:
     def descargar(self, url):
 
         if not url.strip():
-            messagebox.showwarning("Aviso", "Tienes que poner una URL")
+            messagebox.showwarning("Warning", "Enter a URL")
             return
 
         try:
-            messagebox.showinfo("Inicio", "Iniciando descarga..")
+            messagebox.showinfo("Starting", "Starting download..")
 
             self.model.descargar_mp3(url)
 
-            messagebox.showinfo("Descarga correcta", "Descarga completa c:")
+            messagebox.showinfo("Download succesful", "Download finished c:")
 
         except Exception as e:
             messagebox.showerror("Error", str(e))
